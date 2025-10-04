@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUKNIVES - Premium Blades</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+
+    /* 🔹 Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #000000, #1a1a1a);
+    }
+
+    .navbar-brand img {
+      border-radius: 50%;
+      border: 2px solid #ffc107;
+    }
+
+    .nav-link {
+      color: #ddd !important;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    /* 🔹 Hero Section */
+    .hero {
+      background: linear-gradient(to right, #000, #222, #000);
+      color: #fff;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: #ffc107;
+      font-weight: 700;
+    }
+
+    .hero .btn-warning {
+      font-weight: 600;
+      padding: 12px 35px;
+      transition: 0.3s;
+    }
+
+    .hero .btn-warning:hover {
+      background-color: #e0a800;
+      transform: scale(1.05);
+    }
+
+    /* 🔹 Product Cards */
+    .card {
+      border: none;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      height: 320px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.07);
+    }
+
+    /* 🔹 Contact Section */
+    #contact {
+      background-color: #111;
+      color: #f8f9fa;
+    }
+
+    #contact a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🔹 Footer */
+    footer {
+      background-color: #000;
+      color: #bbb;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 1.2rem;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.jpeg" alt="HUKNIVES Logo" height="45" class="me-2">
+        <span class="fw-bold text-warning fs-4">HUKNIVES</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Banner -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 mb-3">Welcome to HUKNIVES</h1>
+      <p class="lead mb-4">Premium Handmade Swords, Knives & Axes crafted with precision and passion.</p>
+      <a href="#products" class="btn btn-warning btn-lg shadow">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- 🔹 Product Grid -->
+  <main class="container my-5" id="products">
+    <h2 class="text-center mb-5 fw-bold text-dark border-bottom pb-2">Our Premium Collection</h2>
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/1.jpeg" class="card-img-top" alt="Damascus Sword">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Damascus Scramasax/Falchion</h5>
+            <p class="card-text text-muted">Long sword with pronounced Damascus pattern and black scabbard.</p>
+            <p class="fw-bold text-success fs-5">$220</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/2.jpeg" class="card-img-top" alt="Damascus Sword">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Damascus Scramasax/Falchion</h5>
+            <p class="card-text text-muted">Variant design showing sword & black scabbard on tree stump.</p>
+            <p class="fw-bold text-success fs-5">$75</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/3.jpeg" class="card-img-top" alt="Bowie Knife">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Damascus Hunting/Bowie Knife</h5>
+            <p class="card-text text-muted">High-contrast Damascus blade with brass guard and carved handle.</p>
+            <p class="fw-bold text-success fs-5">$275</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/4.jpeg" class="card-img-top" alt="Medieval Sword">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Medieval Fantasy Sword</h5>
+            <p class="card-text text-muted">Bright steel sword with ornate Celtic designs & brown scabbard.</p>
+            <p class="fw-bold text-success fs-5">$265</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/5.jpeg" class="card-img-top" alt="Fantasy Sword">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Fantasy Beast-Hilt Sword</h5>
+            <p class="card-text text-muted">Textured grip, beast-shaped hilt — power & art combined.</p>
+            <p class="fw-bold text-success fs-5">$255</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/6.jpeg" class="card-img-top" alt="Viking Axe">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Runic Viking Bearded Axe</h5>
+            <p class="card-text text-muted">Steel blade engraved with Norse runes, wooden handle knotwork.</p>
+            <p class="fw-bold text-success fs-5">$150</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/7.jpeg" class="card-img-top" alt="Wood Carving">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Norse Warrior Wood Carving</h5>
+            <p class="card-text text-muted">Circular wood plaque with detailed warrior carving & Celtic border.</p>
+            <p class="fw-bold text-success fs-5">$475</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/8.jpeg" class="card-img-top" alt="Raven Axe">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Raven-Carved Viking Axe</h5>
+            <p class="card-text text-muted">Engraved blade, raven carving handle & embossed leather sheath.</p>
+            <p class="fw-bold text-success fs-5">$120</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="images/9.jpeg" class="card-img-top" alt="Tomahawk">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Tactical Tomahawk</h5>
+            <p class="card-text text-muted">Modern tactical axe with hammered steel head & paracord handle.</p>
+            <p class="fw-bold text-success fs-5">$110</p>
+            <button class="btn btn-outline-dark btn-sm">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 🔹 About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4 text-dark">About Us</h2>
+      <p class="lead text-muted mx-auto" style="max-width: 750px;">
+        At <strong>HUKNIVES</strong>, we craft <b>hand-forged Damascus blades</b>, <b>medieval swords</b>, and
+        <b>Viking axes</b> that blend ancient artistry with modern strength. Each product is made with dedication and
+        detail to perfection.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🔹 Contact Section -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-warning">Contact Us</h2>
+      <p>Have questions or want to order directly? We’d love to hear from you.</p>
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="fas fa-envelope text-warning"></i>
+          <a href="mailto:huknives@gmail.com" class="ms-2">huknives@gmail.com</a>
+        </li>
+        <li><i class="fas fa-map-marker-alt text-warning"></i> Indiana , USA </li>
+      </ul>
+      <div class="mt-4">
+        <a href="https://www.instagram.com/huknives" target="_blank" class="btn btn-outline-warning btn-sm">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="text-center py-3">
+    <p class="mb-0">© 2025 <span class="text-warning fw-semibold">HUKNIVES</span> | All Rights Reserved</p>
+    <div class="mt-2">
+      <a href="https://www.instagram.com/huknives" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:huknives@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
